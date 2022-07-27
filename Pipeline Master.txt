@@ -1,0 +1,14 @@
+# Pipeline Master
+
+Task 1
+- Creates a list of files that are located in /etc and outputs to file1
+ls /etc > file1.txt
+- Creates a list of files that are located in /run and outputs to file2 
+ls /run > file2.txt
+
+Task 2
+- Combine file1 and file2 into another file called unsorted.txt
+- Same line, reverse the output into a file called reverse.txt
+- Creates a list of files that are located in /etc and outputs to file1
+
+cat file1.txt file2.txt | tee unsorted.txt | sort -r > reversed.txt
